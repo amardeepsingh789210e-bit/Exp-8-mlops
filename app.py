@@ -4,7 +4,7 @@ app=Flask(__name__)
 model=joblib.load("model.pkl")
 @app.route("/")
 def home():
-    return jsonify({"message":"Welcome to the Iris Species Prediction API"})
+    return jsonify({"message":"Welcome to new project"})
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
